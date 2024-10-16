@@ -32,17 +32,71 @@ pip install -r requirements
 cd ChatGLM3/train
 ```
 
-1.Use the title information to train the **Titles Model**:
+1. Use the title information to train the **Titles Model**:
 ```bash
 sh scripts/train_title.sh
 ```
 
-2.Use the author information to train the **Authors Model**:
+2. Use the author information to train the **Authors Model**:
 ```bash
 sh scripts/train_author.sh
 ```
 
-3.Use all the information to train the **Full Deatails Model**:
+3. Use all the information to train the **Full Deatails Model**:
 ```bash
 sh scripts/train_all_info.sh
+```
+
+### Inference
+
+```bash
+cd ChatGLM3/inference
+```
+
+```bash
+sh scripts/inference_title_v0_seed42.sh
+```
+
+```bash
+sh scripts/inference_title_v0_seed1029.sh
+```
+
+```bash
+sh scripts/inference_author_v0.sh
+```
+
+```bash
+python Fusion_v0.py
+```
+
+```bash
+sh scripts/inference_title_v1.sh
+```
+
+```bash
+sh scripts/inference_author_v1.sh
+```
+
+```bash
+sh scripts/inference_all_info_v1.sh
+```
+
+```bash
+python Fusion_v1.py
+```
+
+```bash
+sh scripts/inference_title_v2.sh
+```
+
+```bash
+sh scripts/inference_author_v2.sh
+```
+
+```bash
+sh scripts/inference_all_info_v2.sh
+```
+
+```bash
+python Fusion_v2.py
 ```
