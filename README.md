@@ -8,6 +8,7 @@ We have currently made public only the code related to the ChatGLM used in our p
 - Linux
 - Python 3.10
 - PyTorch 2.2.0+cu121
+- It has high resource requirements, and 8*A100 is recommended.
 
 ### data
 1. Download the dataset(WhoIsWho-na-v3.1) and place it in the folder `./ChatGLM3/dataset`.  
@@ -34,17 +35,17 @@ cd ChatGLM3/train
 
 1. Use the title information to train the **Titles Model**:
 ```bash
-sh scripts/train_title.sh
+sbatch scripts/train_title.sh
 ```
 
 2. Use the author information to train the **Authors Model**:
 ```bash
-sh scripts/train_author.sh
+sbatch scripts/train_author.sh
 ```
 
 3. Use all the information to train the **Full Deatails Model**:
 ```bash
-sh scripts/train_all_info.sh
+sbatch scripts/train_all_info.sh
 ```
 
 ### Inference
