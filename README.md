@@ -48,55 +48,30 @@ sh scripts/train_all_info.sh
 ```
 
 ### Inference
-
 ```bash
 cd ChatGLM3/inference
 ```
 
+1. Perform the first round of model inference and result fusion.  
 ```bash
-sh scripts/inference_title_v0_seed42.sh
-```
-
-```bash
-sh scripts/inference_title_v0_seed1029.sh
-```
-
-```bash
-sh scripts/inference_author_v0.sh
-```
-
-```bash
+sbatch scripts/inference_title_v0_seed42.sh
+sbatch scripts/inference_title_v0_seed1029.sh
+sbatch scripts/inference_author_v0.sh
 python Fusion_v0.py
 ```
 
+2. Perform the second round of model inference and result fusion.   
 ```bash
-sh scripts/inference_title_v1.sh
-```
-
-```bash
-sh scripts/inference_author_v1.sh
-```
-
-```bash
-sh scripts/inference_all_info_v1.sh
-```
-
-```bash
+sbatch scripts/inference_title_v1.sh
+sbatch scripts/inference_author_v1.sh
+sbatch scripts/inference_all_info_v1.sh
 python Fusion_v1.py
 ```
 
+3. Perform the third round of model inference and result fusion. 
 ```bash
-sh scripts/inference_title_v2.sh
-```
-
-```bash
-sh scripts/inference_author_v2.sh
-```
-
-```bash
-sh scripts/inference_all_info_v2.sh
-```
-
-```bash
+sbatch scripts/inference_title_v2.sh
+sbatch scripts/inference_author_v2.sh
+sbatch scripts/inference_all_info_v2.sh
 python Fusion_v2.py
 ```
