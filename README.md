@@ -8,7 +8,7 @@ We have currently made public only the code related to the ChatGLM used in our p
 - Linux
 - Python 3.10
 - PyTorch 2.2.0+cu121
-- It has high resource requirements, and 8*A100 is recommended.
+- It has high resource requirements, and 8*A100 is recommended
 
 ### data
 1. Download the dataset(WhoIsWho-na-v3.1) and place it in the folder `./ChatGLM3/dataset`.  
@@ -24,7 +24,7 @@ Is organized in the same format as train_author.json
 
 ### requirements
 ```
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 ## Experiments
