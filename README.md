@@ -10,6 +10,9 @@ We have currently made public only the code related to the ChatGLM used in our p
 - PyTorch 2.2.0+cu121
 - It has high resource requirements, and 8*A100 is recommended
 
+### model
+You can find and download the model files for [ChatGLM3-6B-32K](https://huggingface.co/THUDM/chatglm3-6b-32k) on Hugging Face.  
+
 ### data
 1. Download the dataset(WhoIsWho-na-v3.1) and place it in the folder `./ChatGLM3/dataset`.  
 The WhoIsWho-na-v3.1 dataset used in our paper is sourced from [AMiner.cn](https://www.aminer.cn/open/article?id=5de9efd2530c707ed8b87d99). We have already compressed the dataset and uploaded it to Google Cloud. You can click [here](https://drive.google.com/drive/folders/1p731oybOZ6J7Iji43htE790q_yzf_MSA?usp=sharing) to download it.  
