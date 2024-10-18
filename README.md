@@ -16,11 +16,11 @@ The WhoIsWho-na-v3.1 dataset used in our paper is sourced from [AMiner.cn](https
 
 2. After downloading and decompressing, you can see the following three data files:  
 1）train_author.json:  
-This file is organized into a dictionary. The key is the author ID, and the value includes the author's name ("name"), the ID of the paper published by the relevant author ("normal_data"), and the ID of the paper incorrectly assigned to the author ("outliers")  
+This file is organized into a dictionary. The key is the author ID, and the value includes the author's name ("name"), the ID of the paper published by the relevant author ("normal_data"), and the ID of the paper incorrectly assigned to the author ("outliers").      
 2）pid_to_info_all.json:  
 This file contains specific paper information for all papers that may be involved in the paper.  
 3）ind_valid_author.json:   
-Is organized in the same format as train_author.json
+Is organized in the same format as train_author.json.
 
 ### requirements
 ```
