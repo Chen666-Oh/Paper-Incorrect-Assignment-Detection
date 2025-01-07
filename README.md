@@ -8,7 +8,7 @@ We have currently made public only the code related to the ChatGLM used in our p
 - Linux
 - Python 3.10
 - PyTorch 2.2.0+cu121
-- It has high resource requirements, and 8*A100 is recommended
+- 8 NVIDIA A100 GPUs 
 
 ### model
 You can find and download the model files for [ChatGLM3-6B-32K](https://huggingface.co/THUDM/chatglm3-6b-32k) on Hugging Face.  
